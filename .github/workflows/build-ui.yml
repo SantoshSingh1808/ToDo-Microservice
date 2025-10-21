@@ -1,4 +1,4 @@
-name: Build and Push to ACR
+name: Build and Push image of Micro Todo ui to ACR
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t $IMAGE_NAME:$IMAGE_TAG .
+          docker build -t $IMAGE_NAME:$IMAGE_TAG ./MicroTodoUI
 
       - name: Tag Docker Image for ACR
         run: |
