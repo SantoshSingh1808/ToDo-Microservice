@@ -15,7 +15,7 @@ jobs:
     runs-on: sonuvm
 
     env:
-      IMAGE_NAME: todo-get-tasks-api
+      IMAGE_NAME: todo-add-tasks-api
       IMAGE_TAG: v1
       ACR_NAME: sonyacr002
       ACR_LOGIN_SERVER: sonyacr002.azurecr.io
