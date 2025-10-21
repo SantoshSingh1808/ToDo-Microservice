@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: todo-delete-tasks-api
+      IMAGE_NAME: todo-get-tasks-api
       IMAGE_TAG: v1
-      ACR_NAME: acrdevtodoapp01
-      ACR_LOGIN_SERVER: acrdevtodoapp01.azurecr.io
+      ACR_NAME: sonyacr002
+      ACR_LOGIN_SERVER: sonyacr002.azurecr.io
 
     steps:
       - name: Checkout code
@@ -24,9 +24,9 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v2.3.0
         with:
-          client-id: ff27bcf6-f60c-4a57-8b01-8eee5de2a9cd
-          tenant-id: 0f7010fd-209e-4344-8457-043ffb37143b
-          subscription-id: 1075ec7a-b17a-4f37-bf3f-9d68c4506dc1
+          client-id: 4c5e86c5-063e-46fe-8224-a238dc433558
+          tenant-id: 1449fb85-6c94-4b5d-bcf2-9410cee07ba5
+          subscription-id: e088c65c-826b-4b26-8075-ab650aa85523
 
       - name: Log in to ACR
         run: |
