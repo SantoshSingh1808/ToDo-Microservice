@@ -12,7 +12,7 @@ permissions:
   
 jobs:
   build-and-push:
-    runs-on: sonuvm
+    runs-on: myrunner
 
     env:
       IMAGE_NAME: todo-frontend-tasks-api
