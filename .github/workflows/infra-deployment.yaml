@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   terraform-init-plan:
-    runs-on: myrunner
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -54,7 +54,7 @@ jobs:
         working-directory: ./terraform-todoapp-infra/environments/dev
 
   terraform-apply:
-    runs-on: myrunner
+    runs-on: self-hosted
     if: github.ref == 'refs/heads/main'
     needs: terraform-init-plan
     environment: dev
